@@ -13,13 +13,13 @@ return array(
 	'server' => 'localhost',
 
 	// The name of the database to select.
-	'database' => $_ENV["DB_NAME"],
+	'database' => getenv('DB_NAME'),
 
 	// The database username to connect with.
-	'user' => $_ENV["DB_USER"],
+	'user' => getenv('DB_USER'),
 
 	// The database password to connect with.
-	'password' => $_ENV["DB_PASS"],
+	'password' => getenv('DB_PASS'),
 
 	// The prefix to use when naming tables. This can be no more than 5 characters.
 	'tablePrefix' => 'craft',
